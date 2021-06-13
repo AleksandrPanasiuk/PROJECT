@@ -5,7 +5,7 @@ function Posts({posts, loading,showMore, reset, postsPerPage}) {
     let isDisabled = true
 
 
-    // eslint-disable-next-line no-mixed-operators
+
     if (postsPerPage!==posts.length){
         isDisabled = false
     }
