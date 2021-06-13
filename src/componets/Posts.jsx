@@ -2,6 +2,14 @@ import React from 'react';
 
 function Posts({posts, loading,showMore, reset, postsPerPage}) {
 
+    let isDisabled = true
+
+
+    // eslint-disable-next-line no-mixed-operators
+    if (postsPerPage!==posts.length){
+        isDisabled = false
+    }
+
 
     if (loading){
         return <h2>Loading...</h2>
@@ -11,8 +19,8 @@ function Posts({posts, loading,showMore, reset, postsPerPage}) {
     return (
         <>
             <div className='container mb-2'>
-            <button type="button" className="btn btn-info" onClick = {() =>{showMore(postsPerPage)}}>ShowMore</button>
-            <button type="button" className="btn btn-danger" onClick = {() =>{reset(postsPerPage)}}>Reset</button>
+            <button type="button"  disabled={!isDisabled} className="btn btn-info" onClick = {() =>{showMore(postsPerPage)}}>ShowMore</button>
+            <button type="button" disabled={isDisabled} className="btn btn-danger" onClick = {() =>{reset(postsPerPage)}}>Reset</button>
             </div>
             <ul className="list-group mb-4">
                 {
