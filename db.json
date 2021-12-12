@@ -1,0 +1,234 @@
+{
+  "faults": [
+    {
+      "id":0,
+      "name": "Dont start",
+      "category": [0,1],
+      "catTrust": [{
+        "id": 0,
+        "trust": 0.7
+      },{
+        "id": 1,
+        "trust": 0.3
+      }],
+      "reasons": [0,1,2,3,4]
+    },
+    {
+      "id":2,
+      "name": "Unstable engine operation",
+      "category": [1],
+      "catTrust": [{
+        "id": 1,
+        "trust": 1
+      }],
+      "reasons": [2,5,6,7]
+    },
+    {
+      "id":3,
+      "name": "Engine overheating",
+      "category": [1,2],
+      "catTrust": [{
+        "id": 1,
+        "trust": 0.3
+      },{
+        "id": 2,
+        "trust": 0.7
+      }],
+      "reasons": [8,9,10,14]
+    },
+    {
+      "id":4,
+      "name": "No oil pressure",
+      "category": [2],
+      "catTrust": [{
+        "id": 2,
+        "trust": 1
+      }],
+      "reasons": [0,8,11,12]
+    },
+    {
+      "id":5,
+      "name": "Engine wedge",
+      "category": [0],
+      "catTrust": [{
+        "id": 0,
+        "trust": 1
+      }],
+        "reasons": [8,9,10,13,14]
+      }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "Manual problem"
+    },
+    {
+      "id": 1,
+      "name": "Pipe problem"
+    },
+    {
+      "id": 2,
+      "name": "Component problem"
+    }
+  ],
+  "reasons": [
+{
+    "id": 0,
+    "name": "Burnt-out piston or valve",
+    "category": [{
+      "id": 2,
+      "trust": 1
+    }]
+    },
+{
+    "id": 1,
+    "name": "Injectors are clogged",
+    "category": [{
+      "id": 2,
+      "trust": 1
+    }]
+    },
+{
+    "id": 2,
+    "name": "Bad fuel",
+    "category": [{
+      "id": 1,
+      "trust": 0.54
+    },{
+      "id": 2,
+      "trust": 0.46
+    }]
+    },
+{
+    "id": 3,
+    "name": "No spark ignition",
+    "category": [{
+      "id": 1,
+      "trust": 0.7
+    },{
+      "id": 2,
+      "trust": 0.3
+    }]
+    },
+{
+    "id": 4,
+    "name": "The battery ran out",
+    "category": [{
+      "id": 0,
+      "trust": 1
+    }]
+    },
+{
+    "id": 5,
+    "name": "Bad high voltage wires",
+    "category": [{
+      "id": 0,
+      "trust": 0.7
+    },{
+      "id": 1,
+      "trust": 0.3
+    }]
+    },
+{
+    "id": 6,
+    "name": "The air filter is clogged",
+    "category": [{
+      "id": 0,
+      "trust": 0.8
+    },{
+      "id": 1,
+      "trust": 0.2
+    }]
+    },
+{
+    "id": 7,
+    "name": "Bad spark plugs",
+    "category": [{
+      "id": 0,
+      "trust": 1
+    }]
+    },
+{
+    "id": 8,
+    "name": "Outdated oil",
+    "category": [{
+      "id": 1,
+      "trust": 0.7
+    },{
+      "id": 0,
+      "trust": 0.3
+    }]
+    },
+{
+    "id": 9,
+    "name": "Coolant leak",
+    "category": [{
+      "id": 0,
+      "trust": 1
+    }]
+    },
+{
+    "id": 10,
+    "name": "The cooling system is clogged",
+    "category": [{
+      "id": 0,
+      "trust": 0.4
+    },{
+      "id": 1,
+      "trust": 0.6
+    }]
+    },
+{
+    "id": 11,
+    "name": "The oil receiver is clogged",
+    "category": [{
+      "id": 0,
+      "trust": 1
+    }]
+},
+
+{
+    "id": 12,
+    "name": "Bad oil rings",
+    "category": [{
+      "id": 0,
+      "trust": 1
+    }]
+    },
+{
+    "id": 13,
+    "name": "The cylinder head gasket is pierced",
+    "category": [{
+      "id": 1,
+      "trust": 0.3
+    },{
+      "id": 2,
+      "trust": 0.7
+    }]
+    },
+{
+    "id": 14,
+    "name": "Not a working pump",
+    "category": [{
+      "id": 1,
+      "trust": 0.6
+    },{
+      "id": 2,
+      "trust": 0.4
+    }]
+    }
+  ],
+  "resCategories": [
+    {
+    "id": 0,
+    "name": "easy"
+    },
+    {
+    "id": 1,
+    "name": "medium"
+    },
+    {
+    "id": 2,
+    "name": "hard"
+    }
+]}
